@@ -1,0 +1,14 @@
+/* Garet Medium font-face import */
+@font-face {
+  font-family: 'Garet';
+  src: url('/fonts/Garet-Book.woff2') format('woff2'),
+       url('/fonts/Garet-Book.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Garet', 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-weight: 500;
+}

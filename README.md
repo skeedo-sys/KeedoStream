@@ -1,14 +1,14 @@
-# Fireplexity v2
+# KeedoStream
 
 AI search engine with web, news, and images.
 
-<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjBxbWFxamZycWRkMmVhMGFiZnNuZjMxc3lpNHpuamR4OWlwa3F4NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QbfaTCB1OmkRmIQwzJ/giphy.gif" width="100%" alt="Fireplexity Demo" />
+<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjBxbWFxamZycWRkMmVhMGFiZnNuZjMxc3lpNHpuamR4OWlwa3F4NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QbfaTCB1OmkRmIQwzJ/giphy.gif" width="100%" alt="KeedoStream Demo" />
 
 ## Setup
 
 ```bash
-git clone https://github.com/mendableai/fireplexity.git
-cd fireplexity
+git clone https://github.com/skeedo-sys/keedostream.git
+cd keedostream
 npm install
 ```
 
@@ -34,7 +34,7 @@ Open http://localhost:3000
 
 ## Deploy
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/mendableai/fireplexity)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/mendableai/keedostream)
 
 ## Get API Keys
 

@@ -28,7 +28,7 @@ interface MessageData {
   ticker?: string
 }
 
-export default function FireplexityPage() {
+export default function KeedoStreamPage() {
   const [sources, setSources] = useState<SearchResult[]>([])
   const [newsResults, setNewsResults] = useState<NewsResult[]>([])
   const [imageResults, setImageResults] = useState<ImageResult[]>([])
@@ -48,7 +48,7 @@ export default function FireplexityPage() {
 
   const { messages, sendMessage, status } = useChat({
     transport: new DefaultChatTransport({
-      api: '/api/fireplexity/search',
+  api: '/api/fireplexity/search',
       body: firecrawlApiKey ? { firecrawlApiKey } : undefined
     })
   })
@@ -150,7 +150,7 @@ export default function FireplexityPage() {
   useEffect(() => {
     const checkApiKey = async () => {
       try {
-        const response = await fetch('/api/fireplexity/check-env')
+  const response = await fetch('/api/fireplexity/check-env')
         const data = await response.json()
         
         if (data.hasFirecrawlKey) {
@@ -246,33 +246,32 @@ export default function FireplexityPage() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header with logo - fixed width to prevent jumping */}
-      <header className="px-4 sm:px-6 lg:px-8 py-1 mt-2">
+      <header className="px-4 sm:px-6 lg:px-8 py-2 mt-2 bg-white opacity-95 backdrop-blur-sm shadow-xs">
         <div className="max-w-[1216px] mx-auto flex items-center justify-between">
           <Link
-            href="https://firecrawl.dev"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/"
             className="flex items-center"
           >
             <Image 
-              src="/firecrawl-wordmark.svg" 
-              alt="Firecrawl Logo" 
+              src="/deep-skeedo-logo-light-theme-croped.svg" 
+              alt="KeedoStream Logo" 
               width={90} 
               height={24}
-              className="h-6 w-auto"
+              className="h-7 w-auto"
+              priority
             />
           </Link>
         </div>
       </header>
 
       {/* Hero section - matching other pages */}
-      <div className={`px-4 sm:px-6 lg:px-8 pt-16 pb-8 ${isChatActive ? 'hidden' : 'block'}`}>
+      <div className={`px-4 sm:px-6 lg:px-6 pt-16 pb-8 ${isChatActive ? 'hidden' : 'block'}`}>
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-[3rem] lg:text-[4rem] font-medium tracking-tight leading-tight">
-            <span className="text-[#ff4d00] block">
-              Fireplexity v2
+          <h1 className="text-[2.5rem] lg:text-[3.2rem] font-medium tracking-tight leading-tight">
+            <span className="text-[#BBDD31] font-medium block">
+              SkeedoStream
             </span>
-            <span className="text-[#262626] dark:text-white block text-[3rem] lg:text-[4rem] font-medium -mt-2">
+            <span className="text-[#262626] dark:text-white block lg:text-[3.2rem] font-medium -mt-2">
               Search & Scrape
             </span>
           </h1>
@@ -316,14 +315,14 @@ export default function FireplexityPage() {
       <Dialog open={showApiKeyModal} onOpenChange={setShowApiKeyModal}>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>Firecrawl API Key Required</DialogTitle>
+            <DialogTitle>API Key Required</DialogTitle>
             <DialogDescription>
-              To use Fireplexity search, you need a Firecrawl API key. Get one for free at{' '}
+              To use SKeedoStream search, you need a Firecrawl API key. Get one for free at{' '}
               <a 
                 href="https://www.firecrawl.dev" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-orange-600 hover:text-orange-700 underline"
+                className="text-accent underline hover:text-accent-foreground"
               >
                 firecrawl.dev
               </a>
@@ -342,7 +341,7 @@ export default function FireplexityPage() {
               }}
               className="h-12"
             />
-            <Button onClick={handleApiKeySubmit} variant="orange" className="w-full">
+            <Button onClick={handleApiKeySubmit} variant="default" className="w-full">
               Save API Key
             </Button>
           </div>

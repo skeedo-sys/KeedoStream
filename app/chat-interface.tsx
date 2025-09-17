@@ -226,7 +226,7 @@ export function ChatInterface({ messages, sources, newsResults, imageResults, fo
                                   href={result.url}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="group relative overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700 hover:border-orange-300 dark:hover:border-orange-600 hover:shadow-md h-28"
+                                  className="group relative overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700 hover:border-accent hover:shadow-md h-28"
                                 >
                                   {/* Background image */}
                                   {result.image && (
@@ -277,7 +277,7 @@ export function ChatInterface({ messages, sources, newsResults, imageResults, fo
                                     </div>
                                     
                                     {/* Title */}
-                                    <h3 className="font-medium text-xs text-gray-900 dark:text-white line-clamp-2 group-hover:text-orange-600 dark:group-hover:text-orange-400 leading-tight">
+                                    <h3 className="font-medium text-xs text-gray-900 dark:text-white line-clamp-2 group-hover:text-accent leading-tight">
                                       {result.title}
                                     </h3>
                                     
@@ -344,11 +344,11 @@ export function ChatInterface({ messages, sources, newsResults, imageResults, fo
                                 <button
                                   key={qIndex}
                                   onClick={() => handleFollowUpClick(question)}
-                                  className="w-full text-left p-2 bg-white dark:bg-zinc-800 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-orange-300 dark:hover:border-orange-600 hover:shadow-md group"
+                                  className="w-full text-left p-2 bg-white dark:bg-zinc-800 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-accent hover:text-accent-foreground hover:shadow-md group"
                                 >
                                   <div className="flex items-start gap-2">
-                                    <Plus className="h-4 w-4 text-gray-400 group-hover:text-orange-500 flex-shrink-0 mt-0.5" />
-                                    <span className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-orange-600 dark:group-hover:text-orange-400 break-words">
+                                    <Plus className="h-4 w-4 text-gray-400 group-hover:text-accent flex-shrink-0 mt-0.5" />
+                                    <span className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-accent break-words">
                                       {question}
                                     </span>
                                   </div>
@@ -430,7 +430,7 @@ export function ChatInterface({ messages, sources, newsResults, imageResults, fo
                     href={result.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group relative overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700 hover:border-orange-300 dark:hover:border-orange-600 hover:shadow-md h-28"
+                    className="group relative overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700 hover:border-accent hover:shadow-md h-28"
                   >
                     {/* Background image */}
                     {result.image && (
@@ -481,7 +481,7 @@ export function ChatInterface({ messages, sources, newsResults, imageResults, fo
                       </div>
                       
                       {/* Title */}
-                      <h3 className="font-medium text-xs text-gray-900 dark:text-white line-clamp-2 group-hover:text-orange-600 dark:group-hover:text-orange-400 leading-tight">
+                      <h3 className="font-medium text-xs text-gray-900 dark:text-white line-clamp-2 group-hover:text-accent leading-tight">
                         {result.title}
                       </h3>
                       
@@ -593,11 +593,11 @@ export function ChatInterface({ messages, sources, newsResults, imageResults, fo
                   <button
                     key={index}
                     onClick={() => handleFollowUpClick(question)}
-                    className="w-full text-left p-2 bg-white dark:bg-zinc-800 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-orange-300 dark:hover:border-orange-600 hover:shadow-md group"
+                    className="w-full text-left p-2 bg-white dark:bg-zinc-800 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-accent hover:shadow-md group"
                   >
                     <div className="flex items-center gap-2">
-                      <Plus className="h-4 w-4 text-gray-400 group-hover:text-orange-500 flex-shrink-0" />
-                      <span className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-orange-600 dark:group-hover:text-orange-400">
+                      <Plus className="h-4 w-4 text-gray-400 group-hover:text-accent flex-shrink-0" />
+                      <span className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-accent">
                         {question}
                       </span>
                     </div>
@@ -640,7 +640,7 @@ export function ChatInterface({ messages, sources, newsResults, imageResults, fo
                 <button
                   type="submit"
                   disabled={!input.trim() || isLoading}
-                  className="p-0 flex items-center justify-center rounded-lg bg-[#ff4d00] hover:bg-[#e64400] disabled:bg-gray-300 disabled:cursor-not-allowed active:scale-95 group"
+                  className="p-0 flex items-center justify-center rounded-lg bg-accent hover:bg-accent/80 disabled:bg-gray-300 disabled:cursor-not-allowed active:scale-95 group"
                 >
                   <div className="w-[48px] h-[32px] flex items-center justify-center">
                     {isLoading ? (
