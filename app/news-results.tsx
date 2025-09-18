@@ -47,9 +47,9 @@ export function NewsResults({ results, isLoading }: NewsResultsProps) {
             href={result.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="group block flex-shrink-0 w-[280px] sm:w-auto"
+            className="group block flex-shrink-0 w-[280px] sm:w-auto news-result-link"
           >
-            <Card className="p-3 bg-white dark:bg-zinc-800 border-gray-200 dark:border-gray-700 hover:border-accent transition-all duration-200 hover:shadow-md h-full">
+            <Card className="p-3 bg-white dark:bg-zinc-800 border-gray-200 dark:border-gray-700 hover:border-citation-green-dark transition-all duration-200 hover:shadow-md h-full">
             <div className="flex gap-3">
               {result.image && isValidImageUrl(result.image) && (
                 <div className="relative w-16 h-16 flex-shrink-0 rounded overflow-hidden bg-gray-100 dark:bg-zinc-700">
@@ -67,7 +67,7 @@ export function NewsResults({ results, isLoading }: NewsResultsProps) {
                 </div>
               )}
               <div className="flex-1 min-w-0">
-                <h4 className="text-sm font-medium line-clamp-2 text-gray-900 dark:text-gray-100 group-hover:text-accent mb-1">
+                <h4 className="text-sm font-medium line-clamp-2 text-gray-900 dark:text-gray-100 group-hover:text-citation-green-dark mb-1">
                   {result.title}
                 </h4>
                 <div className="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">

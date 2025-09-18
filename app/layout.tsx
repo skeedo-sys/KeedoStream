@@ -3,7 +3,7 @@ import "./globals.css";
 import { Toaster } from 'sonner'
 
 export const metadata: Metadata = {
-  title: "KeedoStream - AI-Powered Multi-Source Search",
+  title: "Skeedo Stream - AI-Powered Multi-Source Search",
   description: "Advanced search with AI-powered insights, news, images, and real-time information",
 };
 

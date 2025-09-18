@@ -13,7 +13,7 @@ interface SearchComponentProps {
 
 export function SearchComponent({ handleSubmit, input, handleInputChange, isLoading }: SearchComponentProps) {
   return (
-    <form onSubmit={handleSubmit} className="max-w-4xl mx-auto pt-12">
+  <form onSubmit={handleSubmit} className="form-focus-within max-w-4xl mx-auto pt-12">
       <div className="relative flex items-center">
         <Input
           type="text"
@@ -26,7 +26,7 @@ export function SearchComponent({ handleSubmit, input, handleInputChange, isLoad
         <button
           type="submit"
           disabled={isLoading || !input || input.trim() === ''}
-          className="absolute right-2 p-0 flex items-center justify-center rounded-lg bg-accent hover:bg-accent/80 disabled:bg-gray-300 disabled:cursor-not-allowed active:scale-95 group"
+          className="submit-btn absolute right-2 p-0 flex items-center justify-center rounded-lg bg-accent hover:bg-accent/80 disabled:bg-gray-300 disabled:cursor-not-allowed active:scale-95 group"
         >
           <div className="w-[60px] h-[38px] flex items-center justify-center">
             {isLoading ? (

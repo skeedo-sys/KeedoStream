@@ -277,7 +277,7 @@ export function ChatInterface({ messages, sources, newsResults, imageResults, fo
                                     </div>
                                     
                                     {/* Title */}
-                                    <h3 className="font-medium text-xs text-gray-900 dark:text-white line-clamp-2 group-hover:text-accent leading-tight">
+                                    <h3 className="font-medium text-xs text-gray-900 dark:text-white line-clamp-2 group-hover:text-citation-green-dark leading-tight">
                                       {result.title}
                                     </h3>
                                     
@@ -344,11 +344,11 @@ export function ChatInterface({ messages, sources, newsResults, imageResults, fo
                                 <button
                                   key={qIndex}
                                   onClick={() => handleFollowUpClick(question)}
-                                  className="w-full text-left p-2 bg-white dark:bg-zinc-800 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-accent hover:text-accent-foreground hover:shadow-md group"
+                                  className="w-full text-left p-2 bg-white dark:bg-zinc-800 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-citation-green-dark hover:text-citation-green-dark hover:shadow-md group related-question-btn"
                                 >
                                   <div className="flex items-start gap-2">
-                                    <Plus className="h-4 w-4 text-gray-400 group-hover:text-accent flex-shrink-0 mt-0.5" />
-                                    <span className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-accent break-words">
+                                    <Plus className="h-4 w-4 text-gray-400 group-hover:text-citation-green-dark flex-shrink-0 mt-0.5" />
+                                    <span className="text-sm text-gray-700 dark:text-gray-300 group-hover:text-citation-green-dark break-words">
                                       {question}
                                     </span>
                                   </div>
@@ -615,7 +615,7 @@ export function ChatInterface({ messages, sources, newsResults, imageResults, fo
       {/* Fixed input at bottom */}
       <div className="fixed lg:absolute bottom-0 left-0 right-0 bg-gradient-to-t from-white via-white dark:from-zinc-900 dark:via-zinc-900 to-transparent pt-4 pb-4 sm:pt-6 sm:pb-6 z-30">
         <div className="max-w-2xl mx-auto px-3 sm:px-4 lg:px-8">
-          <form onSubmit={handleFormSubmit} ref={formRef}>
+          <form onSubmit={handleFormSubmit} ref={formRef} className="form-focus-within">
             <div className="bg-white dark:bg-zinc-800 rounded-2xl shadow-xl border border-gray-200 dark:border-gray-700 p-3 focus-within:border-gray-900 dark:focus-within:border-gray-100 transition-colors">
               <div className="flex items-end gap-2">
                 <Textarea
@@ -640,7 +640,7 @@ export function ChatInterface({ messages, sources, newsResults, imageResults, fo
                 <button
                   type="submit"
                   disabled={!input.trim() || isLoading}
-                  className="p-0 flex items-center justify-center rounded-lg bg-accent hover:bg-accent/80 disabled:bg-gray-300 disabled:cursor-not-allowed active:scale-95 group"
+                  className="submit-btn p-0 flex items-center justify-center rounded-lg bg-accent hover:bg-accent/80 disabled:bg-gray-300 disabled:cursor-not-allowed active:scale-95 group"
                 >
                   <div className="w-[48px] h-[32px] flex items-center justify-center">
                     {isLoading ? (

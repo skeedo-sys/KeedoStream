@@ -45,13 +45,13 @@ export function SearchResults({ results, isLoading }: SearchResultsProps) {
           href={result.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="group block opacity-0 animate-fade-up"
+          className="group block opacity-0 animate-fade-up search-result-link"
           style={{
             animationDelay: `${index * 100}ms`,
             animationFillMode: 'forwards'
           }}
         >
-          <Card className="h-full p-4 bg-white dark:bg-zinc-800 border-gray-200 dark:border-gray-700 hover:border-accent transition-all duration-200 hover:shadow-lg hover:-translate-y-1">
+          <Card className="h-full p-4 bg-white dark:bg-zinc-800 border-gray-200 dark:border-gray-700 hover:border-citation-green-dark transition-all duration-200 hover:shadow-lg hover:-translate-y-1">
             {/* Image/Thumbnail */}
             {result.image && isValidImageUrl(result.image) && (
               <div className="relative h-32 mb-3 rounded-lg overflow-hidden bg-gray-100 dark:bg-zinc-700">
@@ -93,7 +93,7 @@ export function SearchResults({ results, isLoading }: SearchResultsProps) {
             </div>
 
             {/* Title */}
-            <h3 className="font-semibold text-sm mb-1 line-clamp-2 text-gray-900 dark:text-gray-100 group-hover:text-accent">
+            <h3 className="font-semibold text-sm mb-1 line-clamp-2 text-gray-900 dark:text-gray-100 group-hover:text-citation-green-dark">
               {result.title}
             </h3>
 

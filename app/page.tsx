@@ -28,7 +28,7 @@ interface MessageData {
   ticker?: string
 }
 
-export default function KeedoStreamPage() {
+export default function SkeedoStreamPage() {
   const [sources, setSources] = useState<SearchResult[]>([])
   const [newsResults, setNewsResults] = useState<NewsResult[]>([])
   const [imageResults, setImageResults] = useState<ImageResult[]>([])
@@ -254,7 +254,7 @@ export default function KeedoStreamPage() {
           >
             <Image 
               src="/deep-skeedo-logo-light-theme-croped.svg" 
-              alt="KeedoStream Logo" 
+              alt="Skeedo Stream Logo" 
               width={90} 
               height={24}
               className="h-7 w-auto"
@@ -269,7 +269,7 @@ export default function KeedoStreamPage() {
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-[2.5rem] lg:text-[3.2rem] font-medium tracking-tight leading-tight">
             <span className="text-[#BBDD31] font-medium block">
-              SkeedoStream
+              Skeedo Stream
             </span>
             <span className="text-[#262626] dark:text-white block lg:text-[3.2rem] font-medium -mt-2">
               Search & Scrape
@@ -317,7 +317,7 @@ export default function KeedoStreamPage() {
           <DialogHeader>
             <DialogTitle>API Key Required</DialogTitle>
             <DialogDescription>
-              To use SKeedoStream search, you need a Firecrawl API key. Get one for free at{' '}
+              To use Skeedo Stream search, you need a Firecrawl API key. Get one for free at{' '}
               <a 
                 href="https://www.firecrawl.dev" 
                 target="_blank" 

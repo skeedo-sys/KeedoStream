@@ -1,3 +1,83 @@
+/* Sources section link hover color */
+.source-result-link:hover .group-hover\:text-citation-green-dark,
+.source-result-link:focus .group-hover\:text-citation-green-dark {
+  color: hsl(71, 58%, 36%) !important;
+}
+/* News result link hover color */
+.news-result-link:hover .group-hover\:text-citation-green,
+.news-result-link:focus .group-hover\:text-citation-green {
+  color: hsl(71, 83%, 59%) !important;
+}
+.news-result-link:hover .hover\:border-citation-green,
+.news-result-link:focus .hover\:border-citation-green {
+  border-color: hsl(71, 83%, 59%) !important;
+}
+/* Related questions button hover color */
+.related-question-btn:hover,
+.related-question-btn:focus {
+  color: hsl(71, 83%, 59%) !important;
+  border-color: hsl(71, 83%, 59%) !important;
+}
+.related-question-btn:hover .group-hover\:text-citation-green,
+.related-question-btn:focus .group-hover\:text-citation-green {
+  color: hsl(71, 83%, 59%) !important;
+}
+/* Citation link color */
+.text-citation-green {
+  color: hsl(71, 83%, 59%) !important;
+}
+.text-citation-green-dark {
+  color: hsl(71, 58%, 36%) !important;
+}
+.hover\:text-citation-green-dark:hover,
+.hover\:text-citation-green-dark:focus {
+  color: hsl(71, 58%, 36%) !important;
+}
+/* Related questions button hover color */
+.related-question-btn:hover,
+.related-question-btn:focus {
+  color: hsl(71, 58%, 36%) !important;
+  border-color: hsl(71, 58%, 36%) !important;
+}
+.related-question-btn:hover .group-hover\:text-citation-green-dark,
+.related-question-btn:focus .group-hover\:text-citation-green-dark {
+  color: hsl(71, 58%, 36%) !important;
+}
+/* News result link hover color */
+.news-result-link:hover .group-hover\:text-citation-green-dark,
+.news-result-link:focus .group-hover\:text-citation-green-dark {
+  color: hsl(71, 58%, 36%) !important;
+}
+.news-result-link:hover .hover\:border-citation-green-dark,
+.news-result-link:focus .hover\:border-citation-green-dark {
+  border-color: hsl(71, 58%, 36%) !important;
+}
+/* Search result link hover color */
+.search-result-link:hover .group-hover\:text-citation-green-dark,
+.search-result-link:focus .group-hover\:text-citation-green-dark {
+  color: hsl(71, 58%, 36%) !important;
+}
+.search-result-link:hover .hover\:border-citation-green-dark,
+.search-result-link:focus .hover\:border-citation-green-dark {
+  border-color: hsl(71, 58%, 36%) !important;
+}
+/* Improve search result link hover for contrast on light bg */
+.search-result-link:hover .group-hover\:text-\[\#A2C800\],
+.search-result-link:focus .group-hover\:text-\[\#A2C800\] {
+  color: #A2C800 !important;
+}
+.search-result-link:hover .hover\:border-\[\#A2C800\],
+.search-result-link:focus .hover\:border-\[\#A2C800\] {
+  border-color: #A2C800 !important;
+}
+/* Highlight submit button when input or textarea is focused */
+.form-focus-within:focus-within button,
+.form-focus-within:focus-within .submit-btn {
+  background: hsl(71, 83%, 59%) !important;
+  color: #fff !important;
+  box-shadow: 0 0 0 2px hsl(71, 83%, 59%, 0.2);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "./garet-font.css";
@@ -18,7 +98,7 @@
   --secondary-foreground: 72 60% 30%;
   --muted: 72 30% 92%;
   --muted-foreground: 72 10% 40%;
-  --accent: 72 60% 60%;
+  --accent: 71, 83%, 59%;
   --accent-foreground: 0 0% 100%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 0 0% 98%;
@@ -46,7 +126,7 @@
     --secondary-foreground: 0 0% 98%;
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
+    --accent: 71, 83%, 59%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
